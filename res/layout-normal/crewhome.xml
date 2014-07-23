@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/formlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/twelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/appname"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/twelcome"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/badmin"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/twelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/badmin"
+            android:drawableRight="@drawable/badmin"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/admin"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bgettasks"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/badmin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/bgettasks"
+            android:drawableRight="@drawable/bgettasks"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/gettasks"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bnewtask"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bgettasks"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/bnewtask"
+            android:drawableRight="@drawable/bnewtask"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/newtask"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bmapfield"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bnewtask"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/bmapfield"
+            android:drawableRight="@drawable/bmapfield"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/mapfield"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bbuildcrew"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bmapfield"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/bbuildcrew"
+            android:drawableRight="@drawable/bbuildcrew"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/buildcrew"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

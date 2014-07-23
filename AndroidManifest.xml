@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crookham"
+    android:versionCode="1"
+    android:versionName="1.10" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="om.example.crookham.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="om.example.crookham.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- Requires OpenGL ES version 2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/appname"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.crookham.LoginActivity"
+            android:label="@string/appname"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crookham.Configure"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminHome"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminReschedule"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminRescheduleInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminRescheduleDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminRescheduleRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminGetTasks"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminStartInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.InProgressInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminMapField"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminStartDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.InProgressDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AddDeTasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AddInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminReWork"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminDeTasselingRework"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.CrewHome"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.CrewGetTasks"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.InProgressCrewDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.StartCrewDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AddRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminStartRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.InProgressRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminRogueingRework"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminFreezeDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.Admincheckcoordinates"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminFreezeRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.admin.AdminFreezeInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.CrewFreezeDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.CrewStartRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.CrewInProgressRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.crew.CrewFreezeRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMHome"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMAddDeTesseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMAddRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMGetTasks"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMFreezeDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMFreezeRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMInProgressDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMInProgressRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMStartDetasseling"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMStartRogueing"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMStartInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMInProgressInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.crookham.fieldmanager.FMFreezeInspection"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAc_hYm8UW8W04ZOnlnae9IrqdZ6FJoULo" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

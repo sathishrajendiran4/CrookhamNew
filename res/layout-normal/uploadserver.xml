@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fieldtext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Enter Field Name:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fieldname"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/fieldtext"
+        android:background="@drawable/edittextback"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/varietytext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fieldname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Enter Variety Name:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--
+         <EditText android:id="@+id/varietyname"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/varietytext"
+        android:background="@drawable/edittextback"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/fieldname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="text"/>
+    -->
+
+    <Spinner
+        android:id="@+id/varietyname"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fieldname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/varietytext"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/varietyname"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/red"
+        android:text="Cancel"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/varietyname"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:text="Upload"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

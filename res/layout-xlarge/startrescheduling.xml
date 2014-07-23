@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp" 
+        android:layout_below="@+id/title">
+
+        <TextView
+            android:id="@+id/taskid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tasktype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tasklocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskid"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taskdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/taskid"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tasklocation"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taskstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tasklocation"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assignedto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskstatus"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" 
+            android:text="Assinged To:"/>
+
+        <Spinner
+            android:id="@+id/spinassignedto"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/taskstatus"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/assignedto" />
+
+        <TextView
+            android:id="@+id/datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinassignedto"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" 
+            android:text="Reschedule Date:"/>
+
+        <EditText
+            android:id="@+id/editdatepicker"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/spinassignedto"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/datepicker"
+            android:background="@drawable/edittextback"
+            android:focusable="false"
+            android:hint="@string/date" />
+        
+        <ImageView
+            android:id="@+id/idate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinassignedto"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/date"
+            android:focusable="false"
+            android:paddingLeft="18dp"
+            android:src="@drawable/calendar" />
+        
+        <CheckBox
+            android:id="@+id/caddtocalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editdatepicker"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:text="@string/addtocalendar"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        
+        <CheckBox
+            android:id="@+id/csmscrew"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/caddtocalendar"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:text="@string/smsfieldmanger"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        
+        <CheckBox
+            android:id="@+id/cemailcrew"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/csmscrew"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:text="@string/emailfieldmanager"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/bverifylocation"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/green"
+            android:text="Reschedule"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        
+        <Button android:id="@+id/bcancel"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/red"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>

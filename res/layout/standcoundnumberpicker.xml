@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp" >
+
+    <NumberPicker
+        android:id="@+id/numberpicker"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/numberpicker"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/green"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/numberpicker"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/submit"
+        android:background="@color/red"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

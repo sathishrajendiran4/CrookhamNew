@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/formlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/tselectcrew"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/selectcrew"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinselectcrew"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tselectcrew"
+            android:gravity="left|center_vertical"
+            android:prompt="@string/selectcrew"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/tlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tselectcrew"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/tasklocation"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/trework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tlocation"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/rework"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tdate"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/trework"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/taskdate"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edate"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/trework"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tdate"
+            android:background="@drawable/edittextback"
+            android:focusable="false"
+            android:hint="@string/date"
+            android:paddingLeft="15dp" />
+
+        <ImageView
+            android:id="@+id/idate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/trework"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/date"
+            android:focusable="false"
+            android:paddingLeft="15dp"
+            android:src="@drawable/calendar" />
+
+        <CheckBox
+            android:id="@+id/caddtocalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edate"
+            android:layout_marginTop="20dp"
+            android:text="@string/addtocalendar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bcallcrew"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edate"
+            android:layout_marginTop="20dp"
+            android:background="@color/green"
+            android:text="@string/callcrew"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/csmscrew"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bcallcrew"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="@string/smscrew"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cemailcrew"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bcallcrew"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="@string/emailcrew"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/treasonforrework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/csmscrew"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="@string/resonforrework"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sreasonforrework"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/treasonforrework"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="@string/resonforrework"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tcomments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sreasonforrework"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="@string/comments"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ecomments"
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/tcomments"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextback"
+            android:gravity="top"
+            android:hint="@string/comments"
+            android:maxLength="50"
+            android:padding="10dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/baddtask"
+            style="@style/AppTheme"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="@string/addtask"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bback"
+            style="@style/AppTheme"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

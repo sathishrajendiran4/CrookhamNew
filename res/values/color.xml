@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey">#F5F5F6</color>
+    <color name="lightblue">#71C6C1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightgreen">#B0DF73</color>
+    <color name="black">#000000</color>
+    <color name="violet">#F242EF</color>
+    <color name="upload">#0098D2</color>
+    <color name="save">#752183</color>
+    <color name="pink">#F72E96</color>
+    <color name="green">#4BB549</color>
+    <color name="titleback">#AAAAAA</color>
+    <color name="badmin">#467AA4</color>
+    <color name="red">#E6413A</color>
+    <color name="bgettasks">#C28E05</color>
+    <color name="bnewtask">#C34655</color>
+    <color name="bmapfield">#388EB6</color>
+    <color name="bbuildcrew">#AE389A</color>
+    <color name="levelpulldown">#6699ff</color>
+    <color name="notifyfieldmanager">#ff9933</color>
+    <color name="yellow">#ffff00</color>
+
+</resources>

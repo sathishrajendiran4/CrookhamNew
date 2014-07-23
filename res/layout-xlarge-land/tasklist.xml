@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/taskid"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tasktype"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/taskid"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tasklocation"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tasktype"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/taskdate"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tasklocation"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/taskstatus"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/taskdate"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+     <TextView
+        android:id="@+id/taskassignedto"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/taskstatus"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title"
+        android:visibility="visible" />
+    
+    <RelativeLayout android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@color/white">
+        
+        <TextView android:id="@+id/note"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/mainlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlayout" >
+
+        <TextView
+            android:id="@+id/ttaskid"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="@string/taskid"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ttasktype"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ttaskid"
+            android:gravity="center_vertical"
+            android:text="@string/tasktype"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ttasklocation"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ttasktype"
+            android:gravity="center_vertical"
+            android:text="@string/tasklocation"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ttaskdate"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ttasklocation"
+            android:gravity="center_vertical"
+            android:text="@string/date"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ttaskstatus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ttaskdate"
+            android:gravity="center_vertical"
+            android:text="@string/status"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ttaskassignedto"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ttaskstatus"
+            android:gravity="center_vertical"
+            android:text="@string/assignedto"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/tasklistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ttaskdate"
+            android:layout_marginTop="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5sp"
+           android:scrollbarAlwaysDrawVerticalTrack="true"
+           android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:visibility="invisible" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
